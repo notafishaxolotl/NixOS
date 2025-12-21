@@ -18,7 +18,7 @@ Welcome — this is my personal NixOS configuration. It's a first attempt at usi
 - Nixos Wiki (unofficial): https://nixos.wiki/
 - Home Manager: https://home-manager.dev/
 - Superfile: https://superfile.dev/
-- Steam grid icons: https://www.steamgriddb.com/
+- Steam icons: https://www.steamgriddb.com/
 
 ---
 
