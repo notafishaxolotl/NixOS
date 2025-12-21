@@ -32,9 +32,20 @@ bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 
 ---
 
+### Setting up basic file locations
+
+If your anything like me, you can bearly remeber what you should call the basic directorys. So just run this command in /home/<uname>:
+
+```sh
+mkdir Downloads Documents Pictures Videos Music
+```
+
+
+---
+
 ## Enable nixpkgs unstable (optional)
 
-If you need pkgs from `nixos-unstable`, add the channel and update:
+If you want pkgs from `nixos-unstable` aka the `unstable` modules in the `nixos` and `.dotfiles` directories, run this:
 
 ```sh
 nix-channel --add https://channels.nixos.org/nixos-unstable nixpkgs
@@ -44,7 +55,7 @@ nix-channel --update
 sudo nixos-rebuild switch --upgrade
 ```
 
-To view configured channels:
+View configured channels:
 
 ```sh
 nix-channel --list | grep nixos
@@ -59,7 +70,7 @@ You can run these with sudo if you want them system-wide. From my experience, it
 If you want store files on another internal drive wich is formatted to ext4, this commands help make i all just work:
 
 ```sh
-sudo chown -R <your-username>:users /mnt/<your-mount-point>
+sudo chown -R <uname>:users /mnt/<your-mount-point>
 ```
 
 And if you want Steam to recognize your drive for games.
@@ -68,7 +79,7 @@ And if you want Steam to recognize your drive for games.
 mkdir -p /mnt/<your-mount-point>/SteamLibrary/steamapps
 ```
 
-Make sure <your-mount-point> and the drive UUID match in 'drives.nix'.
+Make sure `<your-mount-point>` and the drive UUID match in `drives.nix`, witch is also found in `nixos`
 
 You can check UUIDs with this:
 
@@ -76,13 +87,11 @@ You can check UUIDs with this:
 lsblk -f
 ```
 
-Set custom Steam icons (SteamGridDB has many). Steam's configuration for custom icons is manual.
-
 ---
 
-## Example small utilities
+## Small utils
 
-Make a script executable (example from my config):
+TO make a script executable (an example from my config) run:
 
 ```sh
 chmod +x ~/.config/Scripts/.fehbg
@@ -92,14 +101,14 @@ chmod +x ~/.config/Scripts/.fehbg
 
 ## Why there's a Waybar hypr config
 
-I reused my Waybar config for `niri`, so there's a `hypr` variant in Waybar — choose whichever works best for you.
+I reused my Waybar config for `niri`, so thats why there's a `hypr` variant in Waybar — you can choose whichever one you want, just replace the files in the main `waybar` with the ones in `hypr` so then it works correctly in hyprland.
 
 ---
 
 ## Final thoughts
 
-- This is experimental and tailored to my hardware and preferences (AMD).
-- Feel free to open issues or a PR if you want suggestions, fixes, or help adapting parts of this repo to your setup.
-- And yes labwc is just openbox in wayland, I still love them both equally but niri is where my Heart is truly at.
+- This is all experimental and tailored to my hardware preferences (AMD).
+- Feel free to open issues or a PR if you want to give suggestions, fixes, or even help adapting parts of this repo to your setup.
+- And yes labwc is just openbox but in wayland, I still love them both equally but niri is where my Heart is truly at.
 
-Thanks for reading. Here's a sandwich for your troubles. 🥪
+Thanks for reading. Here's a sandwich for your troubles 🥪
