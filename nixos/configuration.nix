@@ -179,5 +179,5 @@
 
   # System state version (DO NOT change unless you know what you're doing)
   # This determines default locations and settings for stateful data.
-  system.stateVersion = "25.05"; # Set on first install and recommended to keep constant
+  system.stateVersion = "25.11"; # Set on first install and recommended to keep constant
 }
