@@ -265,7 +265,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="zen" // or similar identifier
+    match app-id="zen-beta" // or similar identifier
     draw-border-with-background false
 }
 
@@ -314,7 +314,8 @@ binds {
     Mod+B {spawn "bgselector"; }
     Mod+Space {toggle-window-floating; }
     Mod+Ctrl+Space { switch-focus-between-floating-and-tiling; }
-    Mod+M {fullscreen-window; } 
+    Mod+M { fullscreen-window; }
+    Mod+Shift+M { maximize-column; }
     
     XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "-l" "1" "@DEFAULT_AUDIO_SINK@" "5%+"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "-l" "1" "@DEFAULT_AUDIO_SINK@" "5%-"; }
