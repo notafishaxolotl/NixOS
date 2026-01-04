@@ -106,7 +106,7 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 ---
 
-## Why there's a Waybar hypr config
+## Why there's a hypr config in [Waybar](.config/waybar)
 
 I reused my Waybar config for `niri`, so thats why there's a `hypr` variant in Waybar — you can choose whichever one you want, just replace the files in the main `waybar` with the ones in `hypr` so then it works correctly in hyprland.
 
