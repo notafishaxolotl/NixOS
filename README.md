@@ -80,7 +80,7 @@ And if you want Steam to recognize your drive for games.
 mkdir -p /mnt/<your-mount-point>/SteamLibrary/steamapps
 ```
 
-Make sure `<your-mount-point>` and the drive UUID match in `drives.nix`, witch is also found in `nixos`
+Make sure `<your-mount-point>` and the drive UUID match in [`drives.nix`](nixos/drives.nix).
 
 You can check UUIDs with this:
 
