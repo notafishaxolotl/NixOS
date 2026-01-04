@@ -14,9 +14,9 @@ Welcome — this is my personal NixOS configuration. It's a first attempt at usi
 
 ## Useful links
 
-- [The BEST NixOS tutorial](https://youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&si=51kT5IAxmpOvwZCC)
 - NixOS Wiki [(official)](https://wiki.nixos.org/)
 - NixOS Wiki [(unofficial)](https://nixos.wiki/)
+- [The BEST NixOS tutorial](https://youtube.com/playlist?list=PL_WcXIXdDWWpuypAEKzZF2b5PijTluxRG&si=51kT5IAxmpOvwZCC)
 - [Home Manager](https://home-manager.dev/)
 - [Superfile](https://superfile.dev/)
 - [Steam icons](https://www.steamgriddb.com/)
