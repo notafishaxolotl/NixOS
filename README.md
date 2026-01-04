@@ -8,7 +8,7 @@ Welcome — this is my personal NixOS configuration. It's a first attempt at usi
 
 - This repo contains a lot of different configurations I've tried, so be selective when copying/enabling packages/modules — only enable what you actually want to use.
 - Make sure your `home.stateVersion` / `system.stateVersion` match your system original's before switching configurations. Mismatched state versions may cause issues.
-- Environment modules (in the repo) are useful, trust me — they show what each environment contains.
+- The [environment modules](nixos/environments) are very useful to read, trust me — they show what each desktop contains.
 
 ---
 
@@ -46,7 +46,7 @@ mkdir Downloads Documents Pictures Videos Music
 
 ## Enable nixpkgs unstable (optional)
 
-If you want pkgs from `nixos-unstable` aka the `unstable` modules in the [`nixos`](nixos/unstable.nix) and [`.dotfiles`](.dotfiles/unstable.nix) directories, run this:
+If you want pkgs from `nixos-unstable`, aka the `unstable` modules in [`nixos`](nixos/unstable.nix) and [`.dotfiles`](.dotfiles/unstable.nix), run this:
 
 ```sh
 nix-channel --add https://channels.nixos.org/nixos-unstable nixpkgs
