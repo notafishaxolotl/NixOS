@@ -165,6 +165,8 @@
     direnv
     clang
     gcc
+    pavucontrol
+    nodejs
   ];
 
   # Extra fonts (With all Nerd Fonts)
