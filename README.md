@@ -46,7 +46,7 @@ mkdir Downloads Documents Pictures Videos Music
 
 ## Enable nixpkgs unstable (optional)
 
-If you want pkgs from `nixos-unstable` aka the `unstable` modules in the `nixos` and `.dotfiles` directories, run this:
+If you want pkgs from `nixos-unstable` aka the `unstable` modules in the [`nixos`](nixos/unstable.nix) and [`.dotfiles`](.dotfiles/unstable.nix) directories, run this:
 
 ```sh
 nix-channel --add https://channels.nixos.org/nixos-unstable nixpkgs
