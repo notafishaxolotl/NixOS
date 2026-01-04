@@ -92,10 +92,16 @@ lsblk -f
 
 ## Small utils
 
-TO make a script executable (an example from my config) run:
+- To make a script executable (an example from my config) run:
 
 ```sh
 chmod +x ~/.config/Scripts/.fehbg
+```
+
+- If you want to use flatpak (recomended), add the flathub repo using this:
+
+```sh
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 ---
