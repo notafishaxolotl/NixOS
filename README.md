@@ -98,7 +98,7 @@ lsblk -f
 chmod +x ~/.config/Scripts/.fehbg
 ```
 
-- If you want to use flatpak (recomended), add the flathub repo using this:
+- If you want to use `flatpak` (recomended), add the `flathub` repo using this:
 
 ```sh
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
