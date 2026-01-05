@@ -26,13 +26,13 @@ Welcome — this is my personal NixOS configuration. It's a first attempt so it 
 
 ## Post Build 
 
-Run this for `spf` command and other goodies:
+- Run this for `spf` command and other goodies:
 
 ```sh
 bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 ```
 
-- To make a script executable (an example from my config) run:
+- Make a script executable by running this (with an example from my config):
 
 ```sh
 chmod +x ~/.config/Scripts/.fehbg
