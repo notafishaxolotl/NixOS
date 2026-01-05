@@ -1,6 +1,6 @@
 # NixOS Config
 
-Welcome — this is my personal NixOS configuration. It's a first attempt at using Nix and it probably contains a few rough edges, but it works for me. Please feel free to use this as a reference for your own set-up. Pick and choose what you like, and avoid installing everything at onece, it is very easy to get very bloated very fast (I have too many pkgs).
+Welcome — this is my personal NixOS configuration. It's a first attempt so it probably contains a few rough edges, but it works for me and thats all that reallymattersat the end of the day. Please feel free to use this as a reference for your own set-up. Pick and choose what you like, and avoid installing everything at once, it is very easy to get very bloated very fast (I have too many pkgs).
 
 ---
 
