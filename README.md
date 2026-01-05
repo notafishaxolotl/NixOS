@@ -32,6 +32,19 @@ Run this for `spf` command and other goodies:
 bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 ```
 
+- To make a script executable (an example from my config) run:
+
+```sh
+chmod +x ~/.config/Scripts/.fehbg
+```
+
+- If you want to use `flatpak` (recomended), add the `flathub` repo using this:
+
+```sh
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+```
+
+
 ---
 
 ### Setting up basic file locations
@@ -87,22 +100,6 @@ You can check UUIDs with this:
 
 ```sh
 lsblk -f
-```
-
----
-
-## Small utils
-
-- To make a script executable (an example from my config) run:
-
-```sh
-chmod +x ~/.config/Scripts/.fehbg
-```
-
-- If you want to use `flatpak` (recomended), add the `flathub` repo using this:
-
-```sh
-flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 ---
