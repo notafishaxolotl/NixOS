@@ -24,7 +24,7 @@ Welcome — this is my personal NixOS configuration. It's a first attempt so it 
 
 ---
 
-## Install helper (superfile)
+## Install helper
 
 Install the `spf` command with:
 
