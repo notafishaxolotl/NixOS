@@ -24,9 +24,9 @@ Welcome — this is my personal NixOS configuration. It's a first attempt so it 
 
 ---
 
-## Install helper
+## Post Build 
 
-Install the `spf` command with:
+Run this for `spf` command and other goodies:
 
 ```sh
 bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
