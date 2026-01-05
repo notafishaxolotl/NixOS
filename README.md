@@ -35,7 +35,7 @@ bash -c "$(curl -sLo- https://superfile.dev/install.sh)"
 
 ### Setting up basic file locations
 
-If your anything like me, you can bearly remeber what you should call the basic directorys. So just run this command in /home/<uname>:
+If your anything like me, you can bearly remeber what you should call the basic directorys. So just run this command in `/home/<uname>`:
 
 ```sh
 mkdir Downloads Documents Pictures Videos Music
