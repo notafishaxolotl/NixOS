@@ -9,7 +9,7 @@ Welcome — this is my personal NixOS configuration. It's a first attempt so it 
 - This repo contains a lot of different configurations I've tried, so be selective when copying/enabling packages/modules — only enable what you actually want to use.
 - Make sure your [`home.stateVersion`](.dotfiles/home.nix) / [`system.stateVersion`](nixos/configuration.nix) match your system original's before switching configurations. Mismatched state versions may cause issues.
 - The [environment modules](nixos/environments) are very useful to read, trust me — they show what each desktop contains.
-- And make sure to replace my username (acito) with your own in [configuration.nix](nixos/configuration.nix) []() [flake.nix](.dotfiles/flake.nix) [home.nix](.dotfiles/home.nix)
+- And make sure to replace my username (acito) with your own in `[configuration.nix](nixos/configuration.nix)`  `[vm.nix](nixos/vm.nix)`  `[flake.nix](.dotfiles/flake.nix)`  `[home.nix](.dotfiles/home.nix)`
 
 ---
 
