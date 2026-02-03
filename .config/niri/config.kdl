@@ -2,6 +2,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "sh" "-c" "swww-daemon && swww img ~/Pictures/wallpapers/fc9008234432291.68c2fede47d1a.gif"
 spawn-at-startup "activate-linux"
 spawn-at-startup "sh" "-c" "systemctl --user start hyprpolkitagent.service"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
 
 workspace "1"
 workspace "2"

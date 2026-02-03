@@ -1,0 +1,26 @@
+[
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 276,
+                "origin_hash": "405358021a37c14a7c1e85eb2183fe00"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L+C",
+        "mapping_type": "key_macro"
+    },
+    {
+        "input_combination": [
+            {
+                "type": 1,
+                "code": 275,
+                "origin_hash": "405358021a37c14a7c1e85eb2183fe00"
+            }
+        ],
+        "target_uinput": "keyboard",
+        "output_symbol": "Control_L+Shift_L+V",
+        "mapping_type": "key_macro"
+    }
+]
