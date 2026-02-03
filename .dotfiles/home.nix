@@ -14,13 +14,10 @@ in
   
   programs.zen-browser = {
     enable = true;
-    #nativeMessagingHosts = [pkgs.firefoxpwa];
+    nativeMessagingHosts = [pkgs.firefoxpwa];
   };
 
-  home.stateVersion = "25.11"; # Please read the comment before changing.
-
-  # The home.packages option allows you to install Nix packages into your
-  # environment.
+  home.stateVersion = "25.11"; 
   
   nixpkgs.config.allowUnfree = true;
 
@@ -61,6 +58,15 @@ in
       rotatingCoverart
     ];
   };
+
+    #gtk = {
+    #enable = true;
+    #font = {
+    #  name = "Lora Italic"; # Some GTK apps need "Lora Italic", others "Lora, Italic"
+    #  package = pkgs.lora;
+    #  size = 12;
+    #};
+  #};
 
   home.packages = with pkgs; [
     neo-cowsay
