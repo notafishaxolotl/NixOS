@@ -11,6 +11,7 @@
     ./unstable.nix
     ./zsh.nix
     ./login.nix
+    ./mouse.nix
 
     # Desktop environments
 
@@ -172,6 +173,7 @@
   # Extra fonts (With all Nerd Fonts)
   fonts.packages = with pkgs; [
     dina-font
+    lora
   ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 
   # (Uncomment and configure services below as needed)
