@@ -34,7 +34,7 @@ in
       adblock
       hidePodcasts
       shuffle
-      oneko
+        #oneko
       beautifulLyrics
       fullScreen
       betterGenres
@@ -59,23 +59,22 @@ in
     ];
   };
 
-    #gtk = {
-    #enable = true;
-    #font = {
-    #  name = "Lora Italic"; # Some GTK apps need "Lora Italic", others "Lora, Italic"
-    #  package = pkgs.lora;
-    #  size = 12;
-    #};
-  #};
+  nixpkgs.config.permittedInsecurePackages = [
+    "python3.13-ecdsa-0.19.1"
+  ];
 
   home.packages = with pkgs; [
     neo-cowsay
+    cmatrix
+    cava
+    mapscii
+    pipes
+    peaclock
     android-tools
-    #python3Full
     krita
     scrcpy
     btop-rocm
-    duckstation
+    #duckstation
     pcsx2
     rpcs3
     sl 
@@ -90,6 +89,11 @@ in
     activate-linux
     gnome-disk-utility
     kicad
+    #libreoffice
+    prismlauncher
+    jdk25
+    localsend
+    droidcam
   ];
 
   # Let Home Manager install and manage itself.
