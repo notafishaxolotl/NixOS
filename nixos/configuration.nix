@@ -12,6 +12,7 @@
     ./zsh.nix
     ./login.nix
     ./mouse.nix
+    ./vivalidi.nix
 
     # Desktop environments
 
@@ -102,7 +103,10 @@
   services.xserver.enable = true;
 
   # Graphics drivers (AMD)
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
   hardware.graphics.extraPackages = with pkgs; [
 #    amdvlk
     mesa.opencl   
@@ -139,27 +143,35 @@
     viAlias = true;
   };
 
-  # Enable Steam gaming platform
-  programs.steam.enable = true;
-
-  # Enable Bluetooth functionality
+  # Enable Steam
+   programs.steam = {
+    enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = false;
+  };
+  
+  # Enable Bluetooth
   hardware.bluetooth.enable = true;
 
-  # System-wide package selection
+  programs.vivaldi-wayland = {
+    enable = true;
+    desktopBackend = "gtk"; # Set to "kde" or "gnome" if using those desktops
+  };
+
+  # System-wide pkgs
   environment.systemPackages = with pkgs; [
     kitty 
     imagemagick
-    vivaldi
     feh
     git
     superfile
     wget
     fastfetch
-    swww
+    awww
     trashy
     home-manager 
     warehouse
-    xfce.ristretto
+    ristretto
     bluetui
     kdePackages.dolphin
     kdePackages.dolphin-plugins
@@ -168,7 +180,14 @@
     gcc
     pavucontrol
     nodejs
+    
+    steam-run
+    protonup-qt
   ];
+
+  networking.firewall = {
+    allowedTCPPorts = [ 53317 ];
+  };
 
   # Extra fonts (With all Nerd Fonts)
   fonts.packages = with pkgs; [

@@ -22,7 +22,8 @@
     adwaita-icon-theme
     qemu_kvm
     dmidecode
-    wineWowPackages.staging
+    #wineWowPackages.staging
+    wineWow64Packages.staging
     winetricks
     bottles
   ];
