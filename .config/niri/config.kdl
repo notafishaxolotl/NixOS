@@ -308,7 +308,7 @@ window-rule {
 binds {
     Mod+Q { spawn "kitty"; }
     Mod+Tab { spawn "fuzzel"; }
-    Mod+Z { spawn "zen"; }
+    Mod+Z { spawn "zen-beta"; }
     Mod+s {spawn "spotify";}
     Mod+x {spawn "vivaldi";}
     Mod+P {spawn "powermenu"; }
