@@ -1,5 +1,5 @@
 spawn-at-startup "waybar"
-spawn-at-startup "sh" "-c" "swww-daemon && swww img ~/Pictures/wallpapers/fc9008234432291.68c2fede47d1a.gif"
+spawn-at-startup "sh" "-c" "awww-daemon && awww img ~/Pictures/wallpapers/fc9008234432291.68c2fede47d1a.gif"
 spawn-at-startup "activate-linux"
 spawn-at-startup "sh" "-c" "systemctl --user start hyprpolkitagent.service"
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
@@ -190,6 +190,11 @@ layout {
         // bottom 64
     //}
     background-color "transparent"
+}
+
+layer-rule {
+    match namespace="awww-daemon$"
+    place-within-backdrop true
 }
 
 // Add lines like this to spawn processes at startup.
