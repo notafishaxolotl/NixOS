@@ -89,7 +89,7 @@ in
     activate-linux
     gnome-disk-utility
     kicad
-    #libreoffice
+    libreoffice
     prismlauncher
     jdk25
     localsend
