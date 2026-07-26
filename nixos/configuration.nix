@@ -180,6 +180,8 @@
     gcc
     pavucontrol
     nodejs
+
+    ncdu
     
     steam-run
     protonup-qt

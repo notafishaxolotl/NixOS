@@ -40,6 +40,7 @@
       trashy = "trash empty --all";
       c = "clear";
       watermark = "activate-linux";
+      optimizse = "sudo nix-store --optimise -vvvvv"; # you dont need "-vvvvv" all it does is show its acctualy doing somthing in terminal
     };
   };
   
