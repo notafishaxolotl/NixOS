@@ -17,9 +17,10 @@
     # Desktop environments
 
     #./environments/hyprland.nix
-    ./environments/openbox.nix
+    #./environments/openbox.nix
     ./environments/niri.nix
-    ./environments/labwc.nix
+    #./environments/labwc.nix
+    ./environments/awesome.nix
   ];
 
   # Enable PolicyKit for privilege escalation dialogs
@@ -141,6 +142,14 @@
     enable = true;
     vimAlias = true;
     viAlias = true;
+  };
+
+  security.sudo.extraConfig = ''
+    Defaults env_keep += "EDITOR VISUAL SUDO_EDITOR"
+  '';
+
+  environment.variables = {
+  SUDO_EDITOR = "nvim";
   };
 
   # Enable Steam

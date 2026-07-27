@@ -33,7 +33,7 @@
       rebuild-home = "home-manager switch --flake ./.dotfiles";
       rebuild = "sudo nixos-rebuild switch";
       upgrade = "sudo nixos-rebuild switch --upgrade";
-      config = "sudo vi /etc/nixos/configuration.nix";
+      config = "sudoedit /etc/nixos/configuration.nix";
       home = "vi ~/.dotfiles/home.nix";
       flake = "vi ~/.dotfiles/flake.nix";
       garbage = "nix-collect-garbage -d";
@@ -41,6 +41,7 @@
       c = "clear";
       watermark = "activate-linux";
       optimizse = "sudo nix-store --optimise -vvvvv"; # you dont need "-vvvvv" all it does is show its acctualy doing somthing in terminal
+      svi = "sudoedit";
     };
   };
   
