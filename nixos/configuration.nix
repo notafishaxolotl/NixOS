@@ -13,6 +13,7 @@
     ./login.nix
     ./mouse.nix
     ./vivalidi.nix
+    ./openvpn.nix
 
     # Desktop environments
 
@@ -20,7 +21,7 @@
     #./environments/openbox.nix
     ./environments/niri.nix
     #./environments/labwc.nix
-    ./environments/awesome.nix
+    ./environments/xmonad.nix
   ];
 
   # Enable PolicyKit for privilege escalation dialogs
