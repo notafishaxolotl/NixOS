@@ -10,6 +10,7 @@ in
   imports = [
     inputs.zen-browser.homeModules.beta
     ./unstable.nix
+    ./cybsec.nix
   ];
   
   programs.zen-browser = {
@@ -72,6 +73,7 @@ in
     peaclock
     android-tools
     krita
+    gimp-with-plugins
     scrcpy
     btop-rocm
     #duckstation
